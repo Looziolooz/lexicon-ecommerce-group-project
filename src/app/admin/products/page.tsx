@@ -32,7 +32,6 @@ export default async function AdminProductsPage({ searchParams }: AdminProductsP
   if (newProduct) {
     try {
       customProduct = JSON.parse(decodeURIComponent(newProduct));
-      toast.success(`New or updated product: ${customProduct?.title}`)
     } catch (e) {
       console.error("Error parsing product", e);
     }
