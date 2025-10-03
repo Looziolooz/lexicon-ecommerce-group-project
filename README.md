@@ -1,258 +1,223 @@
-# 🏪 E-handelsplattform i Next.js
+```markdown
+# E-commerce Platform in Next.js
 
-En modern, responsiv e-handelsplattform utvecklad som grupprojekt i Lexicon Frontend Development 2025.
+A modern, responsive e-commerce platform developed as a group project in Lexicon Frontend Development 2025.
 
----
+![Project Banner](https://via.placeholder.com/1200x400/3B82F6/FFFFFF?text=Lexicon+E-commerce+Platform)
 
-## 📦 Innehållsförteckning
+## 📦 Table of Contents
 
-- [Om projektet](#-om-projektet)
-- [Funktioner](#-funktioner)
-- [Teknologier](#-teknologier)
-- [Installation](#%EF%B8%8F-installation)
-- [Användning](#-användning)
-- [Projektstruktur](#-projektstruktur)
-- [Arbetsflöde](#-arbetsflöde)
-- [Sprintplan](#-sprintplan)
-- [API Integration](#-api-integration)
-- [Bidra](#-bidra)
-- [Lärdomar](#-lärdomar)
-- [Team](#-team)
-- [Licens](#%EF%B8%8F-licens)
-- [Kontakt](#-kontakt)
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Workflow](#workflow)
+- [Sprint Plan](#sprint-plan)
+- [API Integration](#api-integration)
+- [Contributing](#contributing)
+- [Learning Outcomes](#learning-outcomes)
+- [Team](#team)
+- [License](#license)
+- [Contact](#contact)
 
----
+## 📖 About the Project
 
-## 📖 Om projektet
+This is a group project for the Lexicon Frontend Development 2025 course, aimed at creating a complete e-commerce platform using modern web technologies. The platform displays products from an external API (DummyJSON), is fully responsive, and includes interactive features such as product filtering, dynamic routing, and an admin panel. The project provided hands-on experience working with Next.js 15 App Router, Server and Client Components, and agile teamwork using SCRUM methodology.
 
-Detta är ett grupprojekt i kursen **Lexicon Frontend Development 2025** där målet var att skapa en fullständig e-handelsplattform med moderna webbteknologier.
+### Design and Attribution
 
-Plattformen visar produkter från ett externt API ([DummyJSON](https://dummyjson.com/)), är fullt responsiv och innehåller interaktiva funktioner som produktfiltrering, dynamisk routing och administratörspanel. Projektet gav praktisk erfarenhet av att arbeta med Next.js 15 App Router, Server och Client Components, samt agilt teamarbete med SCRUM-metodik.
+The design is based on and adapted from **SHOP.CO - eCommerce Website Template** by Muhammad Bilal Akbar on Figma Community. We have:
 
-### Design och Attribution
+- Used the layout structure as a foundation
+- Adapted color scheme and typography
+- Modified components for our specific needs
+- Added our own features and sections
+- Used some product images and graphic elements from the original template
 
-Designen är baserad på och anpassad från [SHOP.CO - eCommerce Website Template](https://www.figma.com/community/file/1273571982885059508) av Muhammad Bilal Akbar på Figma Community. Vi har:
-- Använt layoutstrukturen som grund
-- Anpassat färgschema och typografi
-- Modifierat komponenter för våra specifika behov
-- Lagt till egna funktioner och sektioner
-- Använt vissa produktbilder och grafiska element från originalmallen
+**Original Design Credit:** SHOP.CO by Muhammad Bilal Akbar  
+**Education:** Lexicon Frontend Development 2025  
+**Project Type:** Group Work (4 people)  
+**Timeframe:** 4 sprints (4 weeks)
 
-**Original Design Credit:** [SHOP.CO by Muhammad Bilal Akbar](https://www.figma.com/community/file/1273571982885059508)
+## 🗹 Features
 
-**Utbildning**: Lexicon Frontend Development 2025  
-**Projekttyp**: Grupparbete (4 personer)  
-**Tidsram**: 4 sprintar (4 veckor)
+### User Features
 
----
+- ✅ Homepage with hero section and featured products
+- ✅ Product Catalog with responsive grid layout
+- ✅ Product Filtering with categories and subcategories
+- ✅ Product Details with dynamic routing
+- ✅ Search Functionality for products
+- ✅ About Us Page with company information
+- ✅ Contact Page with form
 
-## 🗹 Funktioner
+### Admin Features
 
-### Användarfunktioner
-- ✅ **Startsida** med hero-sektion och utvalda produkter
-- ✅ **Produktkatalog** med responsiv grid-layout
-- ✅ **Produktfiltrering** med kategorier och underkategorier
-- ✅ **Produktdetaljer** med dynamisk routing
-- ✅ **Sökfunktionalitet** för produkter
-- ✅ **Om oss-sida** med företagsinformation
-- ✅ **Kontaktsida** med formulär
+- ✅ Admin Panel for product management
+- ✅ Create Products via form
+- ✅ Edit Products with pre-filled fields
+- ✅ Delete Products with confirmation
+- ✅ Product List in admin view
 
-### Administratörsfunktioner
-- ✅ **Admin-panel** för produkthantering
-- ✅ **Skapa produkter** via formulär
-- ✅ **Redigera produkter** med förifyllda fält
-- ✅ **Ta bort produkter** med bekräftelse
-- ✅ **Produktlista** i adminvy
+### Technical Features
 
-### Tekniska funktioner
-- ✅ Server Components för optimal prestanda
-- ✅ Client Components för interaktivitet
-- ✅ Dynamisk metadata för SEO
-- ✅ Responsiv design för alla enheter
-- ✅ Tillgänglighetsoptimering (WAVE-testad)
-- ✅ TypeScript för typsäkerhet
-- ✅ Error boundaries och felhantering
+- ✅ Server Components for optimal performance
+- ✅ Client Components for interactivity
+- ✅ Dynamic metadata for SEO
+- ✅ Responsive design for all devices
+- ✅ Accessibility optimization (WAVE-tested)
+- ✅ TypeScript for type safety
+- ✅ Error boundaries and error handling
 
----
+## ✨ Technologies
 
-## ✨ Teknologier
+### Frameworks & Libraries
 
-### Ramverk & Bibliotek
-- **[Next.js 15](https://nextjs.org/)** - React-ramverk med App Router, server-side rendering (SSR), statisk generering (SSG) och optimering för SEO och prestanda
-- **[React 18+](https://react.dev/)** - JavaScript-bibliotek för att bygga interaktiva och återanvändbara användargränssnitt med komponenter och Virtual DOM
-- **[TypeScript 5.0](https://www.typescriptlang.org/)** - Typsäker JavaScript för bättre kodkvalitet och utvecklarupplevelse
-- **[Tailwind CSS 3.4](https://tailwindcss.com/)** - Utility-first CSS-ramverk för snabb och responsiv design med fördefinierade klasser
+- **Next.js 15** - React framework with App Router, server-side rendering (SSR), static generation (SSG), and SEO and performance optimization
+- **React 18+** - JavaScript library for building interactive and reusable user interfaces with components and Virtual DOM
+- **TypeScript 5.0** - Type-safe JavaScript for better code quality and developer experience
+- **Tailwind CSS 3.4** - Utility-first CSS framework for fast and responsive design with predefined classes
 
 ### UI Components & Icons
-- **[Shadcn/ui](https://ui.shadcn.com/)** - Samling anpassningsbara och tillgängliga React-komponenter och stylade med Tailwind CSS
-- **[Lucide React](https://lucide.dev/)** - Öppen källkod-bibliotek med enkla, skalbara ikoner optimerade för React och Next.js
-- **[Sonner](https://sonner.emilkowal.ski/)** - Toast notifications library för använderfeedback
 
-### Verktyg & Kvalitetssäkring
-- **[ESLint](https://eslint.org/)** - Linting för kodkvalitet
-- **[Git](https://git-scm.com/)** - Versionshantering
-- **[GitHub](https://github.com/)** - Kod-hosting och samarbete
-- **[WAVE](https://wave.webaim.org/)** - Web Accessibility Evaluation Tool för tillgänglighetstestning enligt WCAG-riktlinjer
+- **Shadcn/ui** - Collection of customizable and accessible React components styled with Tailwind CSS
+- **Lucide React** - Open-source library with simple, scalable icons optimized for React and Next.js
+- **Sonner** - Toast notifications library for user feedback
 
-### Projekthantering
-- **[Figma](https://figma.com/)** - Design och prototyper
-- **[Trello](https://trello.com/)** - Kanban-board för sprint planning
-- **[Miro](https://miro.com/)** - Retrospektiv och brainstorming
-- **[Slack](https://slack.com/)** - Teamkommunikation
+### Tools & Quality Assurance
 
-### Externa API:er
-- **[DummyJSON](https://dummyjson.com/)** - REST API för produktdata med CRUD-stöd
+- **ESLint** - Linting for code quality
+- **Git** - Version control
+- **GitHub** - Code hosting and collaboration
+- **WAVE** - Web Accessibility Evaluation Tool for accessibility testing according to WCAG guidelines
+
+### Project Management
+
+- **Figma** - Design and prototypes
+- **Trello** - Kanban board for sprint planning
+- **Miro** - Retrospectives and brainstorming
+- **Teams** - Team communication
+
+### External APIs
+
+- **DummyJSON** - REST API for product data with CRUD support
 
 ### Hosting & Deployment
-- **[Vercel](https://vercel.com/)** - Deployment platform 
 
----
+- **Vercel** - Deployment platform
 
 ## 🛠️ Installation
 
-### Förutsättningar
+### Prerequisites
+
 ```bash
 Node.js >= 18.x
-npm >= 9.x eller yarn >= 1.22.x
+npm >= 9.x or yarn >= 1.22.x
 Git >= 2.x
 ```
 
-### Steg-för-steg
+### Step-by-step
 
-1. **Klona repository**
-```bash
-git clone https://github.com/BlackestDawn/lexicon-ecommerce-groupproject.git
-cd lexicon-ecommerce-groupproject
-```
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/BlackestDawn/lexicon-ecommerce-groupproject.git
+   cd lexicon-ecommerce-groupproject
+   ```
 
-2. **Installera beroenden**
-```bash
-npm install
-```
-eller med yarn:
-```bash
-yarn install
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   or with yarn:
+   ```bash
+   yarn install
+   ```
 
-3. **Starta utvecklingsserver**
-```bash
-npm run dev
-```
-eller:
-```bash
-yarn dev
-```
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+   or:
+   ```bash
+   yarn dev
+   ```
 
-4. **Öppna i webbläsare**
-```
-http://localhost:3000
-```
+4. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
 
-### Bygga för produktion
+5. **Build for production**
+   ```bash
+   # Create optimized build
+   npm run build
 
-```bash
-# Skapa optimerad build
-npm run build
+   # Start production server
+   npm start
+   ```
 
-# Starta produktionsserver
-npm start
-```
+6. **Code quality**
+   ```bash
+   # Run ESLint
+   npm run lint
+   ```
 
-### Kodkvalitet
 
-```bash
-# Kör ESLint
-npm run lint
-```
-
----
-
-## 🚀 Användning
-
-### Navigation
-
-| Sida | URL | Beskrivning |
-|------|-----|-------------|
-| **Startsida** | `/` | Hero-sektion, utvalda produkter, kategorier |
-| **Produkter** | `/products` | Alla produkter med filtrering |
-| **Produktdetalj** | `/products/[id]` | Detaljerad produktinformation |
-| **Om oss** | `/about` | Information om företaget |
-| **Kontakt** | `/contact` | Kontaktformulär och information |
-| **Admin** | `/admin` | Översikt för administratörer |
-| **Produkthantering** | `/admin/products` | Lista och hantera produkter |
-| **Lägg till produkt** | `/admin/products/add-product` | Skapa ny produkt |
-| **Redigera produkt** | `/admin/products/[id]` | Redigera befintlig produkt |
-
-### Produktfiltrering
-
-Använd sidomenyn på `/products` för att filtrera efter:
-- **Alla produkter**
-- **Herr** - Skjortor, Skor, Klockor
-- **Dam** - Klänningar, Skor, Väskor, Smycken, Klockor
-- **Accessoarer** - Solglasögon, Klockor, Smycken, Väskor
-
-### Admin-funktioner
-
-1. Navigera till `/admin`
-2. Välj "Products" för att hantera produkter
-3. Använd "Add Product" för att skapa nya produkter
-4. Klicka på en produkt för att redigera eller ta bort
-
----
-
-## 🧱 Projektstruktur
+## 🧱 Project Structure
 
 ```
 lexicon-ecommerce-groupproject/
 │
 ├── src/
 │   ├── app/                           # Next.js App Router
-│   │   ├── page.tsx                  # Startsida
+│   │   ├── page.tsx                  # Homepage
 │   │   ├── layout.tsx                # Root layout
-│   │   ├── globals.css               # Globala styles
+│   │   ├── globals.css               # Global styles
 │   │   │
 │   │   ├── about/
-│   │   │   └── page.tsx              # Om oss-sida
+│   │   │   └── page.tsx              # About page
 │   │   │
 │   │   ├── contact/
-│   │   │   └── page.tsx              # Kontaktsida med formulär
+│   │   │   └── page.tsx              # Contact page with form
 │   │   │
 │   │   ├── products/
-│   │   │   ├── page.tsx              # Produktlista med filter
+│   │   │   ├── page.tsx              # Product list with filter
 │   │   │   └── [id]/
-│   │   │       └── page.tsx          # Dynamisk produktdetalj
+│   │   │       └── page.tsx          # Dynamic product detail
 │   │   │
 │   │   └── admin/
-│   │       ├── page.tsx              # Admin-översikt
-│   │       ├── components/           # Admin-komponenter
+│   │       ├── page.tsx              # Admin overview
+│   │       ├── components/           # Admin components
 │   │       ├── lib/                  # Admin actions
 │   │       └── products/
-│   │           ├── page.tsx          # Admin produktlista
+│   │           ├── page.tsx          # Admin product list
 │   │           ├── add-product/
-│   │           │   └── page.tsx      # Skapa produkt
+│   │           │   └── page.tsx      # Create product
 │   │           └── [id]/
-│   │               └── page.tsx      # Redigera produkt
+│   │               └── page.tsx      # Edit product
 │   │
-│   ├── components/                    # Återanvändbara komponenter
+│   ├── components/                    # Reusable components
 │   │   ├── Header.tsx                # Navigation header
 │   │   ├── Footer.tsx                # Footer
-│   │   ├── Navbar.tsx                # Navigationsmeny
-│   │   ├── Hero.tsx                  # Hero-sektion
-│   │   ├── FilterProducts.tsx        # Produktfilter
-│   │   ├── FeaturedProducts.tsx      # Utvalda produkter
-│   │   ├── CategorySection.tsx       # Kategorisektioner
-│   │   └── Newsletter.tsx            # Nyhetsbrev
+│   │   ├── Navbar.tsx                # Navigation menu
+│   │   ├── Hero.tsx                  # Hero section
+│   │   ├── FilterProducts.tsx        # Product filter
+│   │   ├── FeaturedProducts.tsx      # Featured products
+│   │   ├── CategorySection.tsx       # Category sections
+│   │   └── Newsletter.tsx            # Newsletter
 │   │
-│   ├── data/                          # Datahantering
-│   │   ├── products.ts               # API-funktioner
-│   │   └── consts.ts                 # Konstanter
+│   ├── data/                          # Data management
+│   │   ├── products.ts               # API functions
+│   │   └── consts.ts                 # Constants
 │   │
 │   ├── hooks/                         # Custom React hooks
 │   │
 │   └── lib/                           # Utilities
 │       └── interfaces.ts             # TypeScript interfaces
 │
-├── public/                            # Statiska filer
+├── public/                            # Static files
 │   ├── hero-image.jpg
 │   └── ...
 │
@@ -262,141 +227,115 @@ lexicon-ecommerce-groupproject/
 ├── package.json                       # Dependencies
 ├── tailwind.config.ts                 # Tailwind config
 ├── tsconfig.json                      # TypeScript config
-└── README.md                          # Dokumentation
+└── README.md                          # Documentation
 ```
 
----
+## 📝 Workflow
 
-## 📝 Arbetsflöde
+### Agile Development with SCRUM
 
-### Agil utveckling med SCRUM
+**Daily Activities:**
+- Morning standup meetings (15 min)
+- Teams for ongoing communication
+- Trello for task management
 
-**Dagliga aktiviteter:**
-- 🌅 Dagliga standup-möten (15 min)
-- 💬 Slack för löpande kommunikation
-- 📋 Trello för uppgiftshantering
+**Sprint Structure:**
+- 2-week sprints
+- Sprint planning at start
+- Sprint review at end
+- Sprint retrospective with Miro
 
-**Sprint-struktur:**
-- 📅 2 veckors sprintar
-- 🎯 Sprint planning vid start
-- 📊 Sprint review vid slut
-- 🔄 Sprint retrospective med Miro
+**Development Process:**
+1. Select task from backlog
+2. Create feature-branch from main
+3. Develop functionality
+4. Commit and push to GitHub
+5. Create Pull Request
+6. Code review by at least 1 team member
+7. Merge to main after approval
 
-**Utvecklingsprocess:**
-1. Välj uppgift från backlog
-2. Skapa feature-branch från `main`
-3. Utveckla funktionalitet
-4. Commit och push till GitHub
-5. Skapa Pull Request
-6. Code review av minst 1 teammedlem
-7. Merge till `main` efter godkännande
 
-**Branching-strategi:**
-```
-main (produktion)
-├── feature/navbar
-├── feature/product-filter
-├── feature/admin-panel
-└── bugfix/image-loading
-```
+## 🔄 Sprint Plan
 
-**Git-konventioner:**
-- `feature/` - Nya funktioner
-- `bugfix/` - Buggfixar
-- `refactor/` - Kodförbättringar
-- `docs/` - Dokumentation
+### Sprint 1 - Basic Structure (Week 1)
+**Goal:** Set up project and create basic structure
 
----
+✅ **Completed:**
+- Created Next.js project with TypeScript
+- Configured Tailwind CSS
+- Designed in Figma
+- Selected DummyJSON as API
+- Created GitHub repository with branch protection
+- Implemented fetch functions for products
+- Built homepage with hero section
+- Created basic Header and Footer
+- Documented in README
 
-## 🔄 Sprintplan
+**Learning Outcomes:**
+- Next.js 15 App Router structure
+- TypeScript configuration
+- Basic API integration
 
-### Sprint 1 - Grundläggande struktur (Vecka 1-2)
-**Mål:** Sätta upp projektet och skapa grundstruktur
+### Sprint 2 - Dynamic Routing & Interaction (Week 2)
+**Goal:** Implement product display and filtering
 
-✅ **Genomfört:**
-- Skapat Next.js-projekt med TypeScript
-- Konfigurerat Tailwind CSS
-- Designat i Figma
-- Valt DummyJSON som API
-- Skapat GitHub repository med branch protection
-- Implementerat fetch-funktioner för produkter
-- Byggt startsida med hero-sektion
-- Skapat grundläggande Header och Footer
-- Dokumenterat i README
+✅ **Completed:**
+- Created product card components
+- Implemented dynamic routing for products (`/products/[id]`)
+- Built product list with responsive grid
+- Developed FilterProducts component
+- Implemented Server/Client Component pattern
+- Added CTA buttons linking to product page
+- Created side navigation for categories
+- Integrated category filtering with URL parameters
 
-**Lärdomar:**
-- Next.js 15 App Router struktur
-- TypeScript konfiguration
-- API-integration grundläggande
-
----
-
-### Sprint 2 - Dynamisk routing & Interaktion (Vecka 3-4)
-**Mål:** Implementera produktvisning och filtrering
-
-✅ **Genomfört:**
-- Skapat produktkort-komponenter
-- Implementerat dynamisk routing för produkter (`/products/[id]`)
-- Byggt produktlista med responsiv grid
-- Utvecklat FilterProducts-komponent
-- Implementerat Server/Client Component pattern
-- Lagt till CTA-knappar som länkar till produktsidan
-- Skapat sidonavigering för kategorier
-- Integrerat kategorifiltrering med URL-parametrar
-
-**Lärdomar:**
-- Dynamic routing i Next.js
+**Learning Outcomes:**
+- Dynamic routing in Next.js
 - Server vs Client Components
-- State management med URL params
-- Responsiv design med Tailwind
+- State management with URL params
+- Responsive design with Tailwind
 
----
+### Sprint 3 - Admin & Product Management (Week 3)
+**Goal:** Create admin panel for CRUD operations
 
-### Sprint 3 - Admin & Produkthantering (Vecka 5-6)
-**Mål:** Skapa admin-panel för CRUD-operationer
+✅ **Completed:**
+- Built admin layout and navigation
+- Created admin product list
+- Implemented "Add Product" form
+- Developed "Edit Product" functionality
+- Added "Delete Product" with confirmation
+- Created dynamic metadata for SEO
+- Built contact page with form
+- Implemented form validation
+- Added success/error messages
 
-✅ **Genomfört:**
-- Byggt admin-layout och navigation
-- Skapat admin produktlista
-- Implementerat "Lägg till produkt"-formulär
-- Utvecklat "Redigera produkt"-funktionalitet
-- Lagt till "Ta bort produkt" med bekräftelse
-- Skapat dynamisk metadata för SEO
-- Byggt kontaktsida med formulär
-- Implementerat formulärvalidering
-- Lagt till success/error meddelanden
-
-**Lärdomar:**
-- Form handling i Next.js
+**Learning Outcomes:**
+- Form handling in Next.js
 - Server Actions
 - Data mutation
 - Optimistic UI updates
 
----
+### Sprint 4 - Completion & Optimization (Week 4)
+**Goal:** Finalize, test and document
 
-### Sprint 4 - Slutförande & Optimering (Vecka 7-8)
-**Mål:** Färdigställa, testa och dokumentera
+✅ **Completed:**
+- Merged all features to main
+- Code refactoring and cleanup
+- Accessibility testing with WAVE
+- Fixed accessibility issues
+- Optimized image loading
+- Implemented error boundaries
+- Updated README with complete documentation
+- Added code comments
+- Performance optimization
+- Cross-browser testing
+- Mobile responsiveness testing
 
-✅ **Genomfört:**
-- Merge av alla features till main
-- Kodrefaktorering och cleanup
-- Tillgänglighetstestning med WAVE
-- Fixat accessibility-problem
-- Optimerat bildladdning
-- Implementerat error boundaries
-- Uppdaterat README med komplett dokumentation
-- Lagt till kommentarer i kod
-- Performance-optimering
-- Cross-browser testning
-- Mobile responsiveness-test
-
-**Lärdomar:**
+**Learning Outcomes:**
 - Web accessibility (WCAG)
 - Performance optimization
 - Error handling best practices
 - Documentation importance
-
----
 
 ## 🔌 API Integration
 
@@ -404,188 +343,131 @@ main (produktion)
 
 **Base URL:** `https://dummyjson.com/`
 
-**Endpoints som används:**
+**Endpoints Used:**
 
-| Endpoint | Metod | Beskrivning |
-|----------|-------|-------------|
-| `/products` | GET | Hämta alla produkter |
-| `/products/category/{category}` | GET | Hämta produkter per kategori |
-| `/products/{id}` | GET | Hämta specifik produkt |
-| `/products/search?q={query}` | GET | Sök produkter |
-| `/products/categories` | GET | Hämta alla kategorier |
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/products` | GET | Fetch all products |
+| `/products/category/{category}` | GET | Fetch products by category |
+| `/products/{id}` | GET | Fetch specific product |
+| `/products/search?q={query}` | GET | Search products |
+| `/products/categories` | GET | Fetch all categories |
 
-**Kategorier:**
-- Herr: `mens-shirts`, `mens-shoes`, `mens-watches`
-- Dam: `womens-dresses`, `womens-shoes`, `womens-bags`, `womens-jewellery`, `womens-watches`
-- Accessoarer: `sunglasses`
+**Categories:**
+- **Men:** mens-shirts, mens-shoes, mens-watches
+- **Women:** womens-dresses, womens-shoes, womens-bags, womens-jewellery, womens-watches
+- **Accessories:** sunglasses
 
-**Exempel request:**
+**Example Request:**
 ```typescript
 const response = await fetch('https://dummyjson.com/products/category/mens-shirts');
 const data = await response.json();
 ```
 
----
+## 🤝 Contributing
 
-## 🤝 Bidra
+Want to contribute to the project?
 
-Vill du bidra till projektet?
+### Steps for Contributing:
 
-### Steg för bidrag:
+1. **Fork the project**
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/lexicon-ecommerce-groupproject.git
+   ```
 
-1. **Forka projektet**
-```bash
-git clone https://github.com/YOUR-USERNAME/lexicon-ecommerce-groupproject.git
-```
+2. **Create a feature-branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
 
-2. **Skapa en feature-branch**
-```bash
-git checkout -b feature/amazing-feature
-```
+3. **Make your changes**
+   ```bash
+   git add .
+   git commit -m "Add: Amazing feature"
+   ```
 
-3. **Gör dina ändringar**
-```bash
-git add .
-git commit -m "Add: Amazing feature"
-```
+4. **Push to your fork**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
 
-4. **Push till din fork**
-```bash
-git push origin feature/amazing-feature
-```
-
-5. **Skapa en Pull Request**
-- Gå till GitHub
-- Klicka på "New Pull Request"
-- Beskriv dina ändringar tydligt
-- Vänta på code review
-
-### Commit-konventioner:
-- `Add:` Ny funktionalitet
-- `Fix:` Buggfix
-- `Update:` Uppdatering av befintlig kod
-- `Refactor:` Kodförbättring utan funktionsändring
-- `Docs:` Dokumentation
-- `Style:` Formatering och stiländringar
-
-### Code Review Process:
-- Minst en teammedlem granskar PR
-- Konstruktiv feedback och diskussion
-- Godkännande krävs innan merge till main
-- Branch protection aktiverad på main
+5. **Create a Pull Request**
+   - Go to GitHub
+   - Click "New Pull Request"
+   - Describe your changes clearly
+   - Wait for code review
 
 ### Design Attribution:
-Om du använder grafiska element, vänligen respektera att designen är baserad på [SHOP.CO template](https://www.figma.com/community/file/1273571982885059508) av Muhammad Bilal Akbar.
+If you use graphic elements, please respect that the design is based on SHOP.CO template by Muhammad Bilal Akbar.
 
----
+## 👨‍🏫 Learning Outcomes
 
-## 👨‍🏫 Lärdomar
-
-### Tekniska färdigheter
+### Technical Skills
 
 **Frontend:**
-- ⚛️ Next.js 15 App Router och Server Components
-- 📘 TypeScript för typsäker utveckling
-- 🎨 Tailwind CSS för responsiv design
-- 🔄 Async/await och Promise-hantering
-- 🌐 RESTful API-integration
-- 🧩 Komponentbaserad arkitektur
-- 🎯 React Hooks (useState, useSearchParams, usePathname)
-- 📱 Mobile-first responsive design
-- ♿ Web Accessibility (WCAG)
+- Next.js 15 App Router and Server Components
+- TypeScript for type-safe development
+- Tailwind CSS for responsive design
+- Async/await and Promise handling
+- RESTful API integration
+- Component-based architecture
+- React Hooks (useState, useSearchParams, usePathname)
+- Mobile-first responsive design
+- Web Accessibility (WCAG)
 
-**Verktyg & Processer:**
-- 🔀 Git workflow och versionshantering
-- 👥 Samarbete på GitHub med Pull Requests
-- 📋 Agil utveckling med SCRUM
-- 🎯 Sprint planning och backlog management
-- 🔄 Code reviews och par-programmering
-- 📊 Retrospektiv och kontinuerlig förbättring
-- 🐛 Debugging och problemlösning
-
-### Teamwork & Mjuka färdigheter
-
-**Kommunikation:**
-- Dagliga standup-möten
-- Effektiv slack-kommunikation
-- Tydlig dokumentation
-- Konstruktiv feedback
-
-**Samarbete:**
-- Uppgiftsfördelning
-- Ansvar för egna features
-- Hjälpa teammedlemmar
-- Dela kunskap och lösningar
-
-**Problemlösning:**
-- Analytiskt tänkande
-- Kreativa lösningar
-- Felsökning som team
-- Anpassning till utmaningar
-
----
+**Tools & Processes:**
+- Git workflow and version control
+- Collaboration on GitHub with Pull Requests
+- Agile development with SCRUM
+- Sprint planning and backlog management
+- Retrospectives and continuous improvement
+- Debugging and problem-solving
 
 ## 👥 Team
 
-Detta projekt utvecklades av:
+This project was developed by:
 
-| Namn | GitHub | Fokusområden |
-|------|--------|--------------|
-| **Federico Barberi** | [@fdrcbrbr](https://github.com/fdrcbrbr) | Responsive Design, Testing |
-| **Isabelle Wincrantz** | [@Discokatten](https://github.com/Discokatten) | UI/UX, Frontend Components |
-| **Alexander Stauch** | [@BlackestDawn](https://github.com/BlackestDawn) | Project Lead, Backend Integration |
-| **Lorenzo Nava** | [@Looziolooz](https://github.com/Looziolooz) | Admin Panel, CRUD Operations |
+| Name | GitHub | 
+|------|--------|
+| Federico Barberi | [@fdrcbrbr](https://github.com/fdrcbrbr)
+| Isabelle Wincrantz | [@Discokatten](https://github.com/Discokatten)
+| Alexander Stauch | [@BlackestDawn](https://github.com/BlackestDawn)
+| Lorenzo Dastoli | [@Looziolooz](https://github.com/Looziolooz)
 
-**Kurs:** Lexicon Frontend Development 2025  
-**Institution:** Lexicon  
-**Handledare:** [Lägg till handledarens namn]  
-**Projektperiod:** [Lägg till datum]
+**Course:** Lexicon Frontend Development 2025  
 
----
+## ™️ License
 
-## ™️ Licens
+This project was developed for educational purposes as part of Lexicon Frontend Development 2025.
 
-Detta projekt är utvecklat i utbildningssyfte som en del av Lexicon Frontend Development 2025.
+**License:** CC0 1.0 Universal  
+The project is available to the public and can be used, modified, and distributed freely.
 
-**Licens:** CC0 1.0 Universal  
-Projektet är tillgängligt för allmänheten och kan användas, modifieras och distribueras fritt.
 
----
+**Repository:** https://github.com/looziolooz/lexicon-ecommerce-group-project
 
-## 📫 Kontakt
+**Live Demo:** [https://lexicon-ecommerce-group-project.vercel.app/]
 
-**Team-medlemmar:**
-- Federico Barberi - [@fdrcbrbr](https://github.com/fdrcbrbr)
-- Isabelle Wincrantz - [@Discokatten](https://github.com/Discokatten)
-- Alexander Stauch - [@BlackestDawn](https://github.com/BlackestDawn)
-- Lorenzo Nava - [@Looziolooz](https://github.com/Looziolooz)
+## 🙏 Acknowledgments
 
-**Repository:** [https://github.com/BlackestDawn/lexicon-ecommerce-groupproject](https://github.com/BlackestDawn/lexicon-ecommerce-groupproject)
+- Lexicon for education and support
+- Muhammad Bilal Akbar for SHOP.CO design template on Figma Community
+- DummyJSON for free API
+- Next.js Team for excellent documentation
+- Open Source Community for tools and libraries
 
-**Live Demo:** [Lägg till deployment-länk här]
+## 📄 License & Attribution
 
----
-
-## 🙏 Tack till
-
-- **Lexicon** för utbildning och stöd
-- **Muhammad Bilal Akbar** för [SHOP.CO design template](https://www.figma.com/community/file/1273571982885059508) på Figma Community
-- **DummyJSON** för gratis API
-- **Next.js Team** för utmärkt dokumentation
-- **Open Source Community** för verktyg och bibliotek
-- **Våra handledare** för vägledning och feedback
-
----
-
-## 📄 Licens & Attribution
-
-**Licens:** CC0 1.0 Universal  
-Detta projekt är utvecklat i utbildningssyfte som en del av Lexicon Frontend Development 2025.
+**License:** CC0 1.0 Universal  
+This project was developed for educational purposes as part of Lexicon Frontend Development 2025.
 
 **Design Attribution:**  
-Design baserad på [SHOP.CO - eCommerce Website Template](https://www.figma.com/community/file/1273571982885059508) av Muhammad Bilal Akbar.  
-Vi har anpassat och modifierat designen för våra specifika projektbehov.
+Design based on SHOP.CO - eCommerce Website Template by Muhammad Bilal Akbar.  
+We have adapted and modified the design for our specific project needs.
 
 ---
 
-**Skapad med ❤️ av Lexicon Frontend Development 2025**
+**Created with ❤️ by Lexicon Frontend Development 2025**
+```
+
+
