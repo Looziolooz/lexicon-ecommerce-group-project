@@ -11,7 +11,7 @@ export default function Footer() {
             </h2>
           </Link>
           <p className="text-gray-600 text-balance mt-4">
-            We have clothes that suits your style and wich you're proud to wear.
+            We have clothes that suits your style and wich you`&apos;`re proud to wear.
             From women to men.
           </p>
         </section>
