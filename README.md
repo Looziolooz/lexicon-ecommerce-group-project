@@ -109,10 +109,10 @@ f(🗶)
 🛠️
 ```bash
 # Klona repo
-git clone https://github.com/BlackestDawn/lexicon-ecommerce-groupproject
+git clone https://github.com/looziolooz/lexicon-ecommerce-group-project
 
 # Gå in projektmappen
-cd lexicon-ecommerce-groupproject
+cd lexicon-ecommerce-group-project
 
 #Installera beroenden
 npm install
